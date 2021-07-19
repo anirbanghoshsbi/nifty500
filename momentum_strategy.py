@@ -13,8 +13,8 @@ import numpy as np
 import pandas_datareader.data as reader
 import datetime as dt
 from pandas.tseries.offsets import MonthEnd
-
-symbols=pd.read_csv('/content/ind_nifty500list.csv')
+var='https://raw.githubusercontent.com/anirbanghoshsbi/nifty500/main/ind_nifty500list.csv?token=AJWJL43GYMDMYT5AWH5QNOLA6WDI2'
+symbols=pd.read_csv(var)
 
 symbols['data']=symbols.Symbol+'.NS'
 
